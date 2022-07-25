@@ -1,8 +1,12 @@
 # Automation-testing
 A filter program (or "transformation program under test") is being developed for the input/output channel according to task 1.
+
 In the case when it is specified that a string is specified before the dot, trim the string, discarding all characters after the dot, if there is no dot, then assume that the string is bounded by a dot.
+
 A word is any sequence of characters limited to spaces, punctuation marks, the beginning or end of a line, unless otherwise specified.
+
 1 or 2 argument lines are expected to be input, separated by a system line feed after each of them, and one result line is expected to be output, also ending with a line feed.
+
 Task 1
 A string of characters is given.
 The value of the natural number N is entered in digits in the second line.
@@ -23,7 +27,7 @@ Print the train numbers and the time of their departure to a certain city in eac
 Get information about the availability of train tickets with a certain number.
 Based on the task, a set of tests is being developed for this program as a "black box" (functional testing) – in the form of scripts for the sequence of user input commands and the sequence of expected reactions of the program from start to completion.
 A number is required for each test (scenario).
-Based on a set of tests, a testing program is developed that calls the test, passes her the input data of each of the developed tests, receives the result of the program, based on comparing the result with the expected answer for this text, either the string "Test No. ..." (without quotes) or the string "Test No. ..." is output to the standard input stream failed (according to the test numbers from clause 2.2).
+Based on a set of tests, a testing program is developed that calls the test, passes her the input data of each of the developed tests, receives the result of the program, based on comparing the result with the expected answer for this text, either the string "Test No. ..." (without quotes) or the string "Test No. ..." is output to the standard input stream failed.
 The testing program returns code 0 to the operating system in case of passing all the tests, 1 – in case of not passing part of the tests, 2 – in case of not passing all the tests.
 Other error codes can be used to indicate situations where testing is impossible.
 With the help of the developed programs, perform automated testing of these programs before and after the recommended changes with automated preparation of testing reports.
