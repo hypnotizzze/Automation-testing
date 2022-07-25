@@ -1,0 +1,8 @@
+#!/bin/bash
+rm tester main2 res2
+gcc -o tester tester.c
+gcc -o main2 main2.c
+for((i = 1; i <= 5; i++))
+do
+./tester $i | (./main2 || echo $? > file_err) | ./tester -$i >> res2
+done

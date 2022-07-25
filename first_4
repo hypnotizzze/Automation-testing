@@ -1,0 +1,8 @@
+#!/bin/bash
+rm tester main4 res4
+gcc -o tester tester.c
+gcc -o main4 main4.c
+for((i = 1; i <= 5; i++))
+do
+./tester $i | (./main4 || echo $? > file_err) | ./tester -$i >> res4
+done

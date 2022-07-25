@@ -1,0 +1,10 @@
+# !/bin/bash
+rm ver1 ver2 ver3 tst bd res1
+gcc -o tst tst.c
+gcc -o bd bd.c
+for((i = 1; i <= 3; i++))
+do
+./tst $i baza$i | ./bd > /dev/null; echo $? > file_err; ./tst -$i otv$i ver$i >> res1
+done
+rm ver1 ver2 ver3
+ 
